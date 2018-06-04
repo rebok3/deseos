@@ -39,7 +39,7 @@ export class ListaDeseosService {
     }
 
     eliminarLista( idx:number ) {
-        this.listas.splice( idx, i );
+        this.listas.splice( idx, 1 );
         this.actualizarData();
     }
 }
