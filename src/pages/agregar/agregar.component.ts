@@ -25,7 +25,7 @@ export class AgregarComponent implements OnInit {
     ngOnInit(): void { }
 
     agregar() {
-        if ( this.nombreItem.lenght == 0 ) {
+        if ( this.nombreItem.length == 0 ) {
             return;
         }
 
@@ -41,7 +41,7 @@ export class AgregarComponent implements OnInit {
     }
 
     guardarLista() {
-        if ( this.nombreLista.lenght < 1 ) {
+        if ( this.nombreLista.length < 1 ) {
             this.showAlert();
         } else {
             let lista = new Lista( this.nombreLista );
