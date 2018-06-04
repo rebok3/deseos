@@ -9,13 +9,13 @@
         <ion-card-header>
             <ion-item>
                 <ion-label floating>Nombre de la lista</ion-label>
-                <ion-input type="text" [(ngModel)]="nombreLista" value="nombreLista"></ion-input>
+                <ion-input type="text" [(ngModel)]="nombreLista" value=""></ion-input>
             </ion-item>
         </ion-card-header>
         <ion-card-content>
             <ion-item>
                 <ion-label floating>Item:</ion-label>
-                <ion-input (keyup.enter)="agregar()" type="text" [(ngModel)]="nombreItem" value="nombreItem"></ion-input>
+                <ion-input (keyup.enter)="agregar()" type="text" [(ngModel)]="nombreItem" value=""></ion-input>
             </ion-item>
 
             <button (click)="agregar()" ion-button class="button-block">Agregar</button>
