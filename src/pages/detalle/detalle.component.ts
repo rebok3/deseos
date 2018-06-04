@@ -37,7 +37,7 @@ export class DetalleComponent implements OnInit {
         let confirm = this.alertCtrl.create({
       title: this.lista.nombre,
       message: '¿Seguro que desea eliminar la lista?',
-      buttons: [ Cancelar,
+      buttons: [ 'Cancelar',
         {
           text: 'Eliminar',
           handler: () => {
