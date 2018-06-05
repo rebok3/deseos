@@ -6,7 +6,7 @@ export class Lista {
     terminada: boolean;
     items: ListaItem[];
 
-    constructor(nombre) {
+    constructor(nombre: string) {
         this.nombre = nombre;
         this.terminada = false;
 

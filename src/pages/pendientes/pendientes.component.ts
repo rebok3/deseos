@@ -11,8 +11,7 @@ import { DetalleComponent } from '../detalle/detalle.component';
     templateUrl: './pendientes.component.html'
 })
 export class PendientesComponent implements OnInit {
-    constructor( private _listaDeseos : ListaDeseosService,
-        private navCtrl: NavController ) { }
+    constructor( private _listaDeseos : ListaDeseosService, private navCtrl: NavController ) { }
 
     ngOnInit() { }
 

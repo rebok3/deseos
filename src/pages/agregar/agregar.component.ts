@@ -41,8 +41,14 @@ export class AgregarComponent implements OnInit {
     }
 
     guardarLista() {
-        if ( this.nombreLista.length < 1 ) {
-            this.showAlert();
+        if ( this.nombreLista.length == 0 ) {
+            let alert = this.alertCtrl.create({
+                title: 'Guardar Lista',
+                subTitle: 'El nombre de la lista es necesario',
+                buttons: ['OK']
+            });
+            alert.present();  
+            return;
         } else {
             let lista = new Lista( this.nombreLista );
             lista.items = this.items;
@@ -51,14 +57,5 @@ export class AgregarComponent implements OnInit {
             this._listaDeseos.agregarLista( lista );
             this.navCtrl.pop();
         }        
-    }
-
-    showAlert() {
-            let alert = this.alertCtrl.create({
-                title: 'Guardar Lista',
-                subTitle: 'El nombre de la lista es necesario',
-                buttons: ['OK']
-            });
-            alert.present();        
     }
 }
