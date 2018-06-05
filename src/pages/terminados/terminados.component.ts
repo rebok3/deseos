@@ -9,7 +9,7 @@ import { DetalleComponent } from '../detalle/detalle.component';
     templateUrl: './terminados.component.html'
 })
 export class TerminadosComponent implements OnInit {
-    constructor( private _listaDeseos : ListaDeseosService,
+    constructor( public _listaDeseos : ListaDeseosService,
         private navCtrl: NavController ) { }
 
     ngOnInit(): void { }

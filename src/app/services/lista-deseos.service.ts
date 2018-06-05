@@ -24,6 +24,7 @@ export class ListaDeseosService {
 
     actualizarData(){
         localStorage.setItem( "data", JSON.stringify( this.listas ) );
+        console.log('actualizarData()');
     }
 
     cargarData() {
